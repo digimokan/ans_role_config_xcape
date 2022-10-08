@@ -55,7 +55,13 @@ Install and configure the xcape keyboard-modifier utility.
          ansible.builtin.include_role:
            name: ans_role_config_xcape
            public: yes
+         vars:
+           tap_for_effect_mappings:
+             - { tap_key: 'Control_L', tap_effect: 'Control_L|space' }
    ```
+
+4. Use the role-exported public `xcape_start_cmd` command string in a bashrc,
+   DE/WM, etc to run xcape in the background.
 
 ## Role Options
 
