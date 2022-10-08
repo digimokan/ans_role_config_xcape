@@ -1,0 +1,11 @@
+- name: "Define the xcape service-start command, for external use"
+  ansible.builtin.set_fact:
+    xcape_start_cmd: "xcape -t {{ tap_key_timeout_ms }}{{ mappings_opt }}{{ mappings_args }}"
+  vars:
+    mappings_opt: "{{ " -e " if (mappings|length > 0) else '' }}"
+    mappings_args: "{{ mappings | join(";") if (mappings|length > 0) else '' }}"
+    mappings: |
+      {% for item in tap_for_effect_mappings %}
+      {{ item.tap_key }}={{ item.tap_effect }}
+      {% endfor %}
+

@@ -1,0 +1,6 @@
+- name: "Install xcape"
+  ansible.builtin.include_tasks: install/main.yml
+
+- name: "Configure xcape"
+  ansible.builtin.include_tasks: configure/main.yml
+

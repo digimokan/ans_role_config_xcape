@@ -1,0 +1,13 @@
+# list of tap-for-effect mappings
+#   tap_key: tap this key
+#   tap_effect: when the key is tapped, this key-effect will be emitted
+# example (make a tap of CTRL emit CTRL-SPACE):
+#   tap_for_effect_mappings:
+#     - { tap_key: 'Control_L', tap_effect: 'Control_L|space' }
+# See Xorg source for list of key names:
+#    https://github.com/freedesktop/xorg-x11proto/blob/master/keysymdef.h
+tap_for_effect_mappings: []
+
+# to "tap" key, must be pressed and released within this number of milliseconds
+tap_key_timeout_ms: '500'
+

@@ -1,0 +1,7 @@
+- name: "Install the 'xcape' application package"
+  ansible.builtin.package:
+    name: xcape
+    state: present
+  become: true
+  become_user: root
+
