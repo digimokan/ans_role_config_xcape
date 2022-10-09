@@ -21,7 +21,7 @@ Install and configure the xcape keyboard-modifier utility.
 
 ## Supported Operating Systems
 
-* Ubuntu jammy (22.04)
+* Ubuntu bionic (18.04), focal (20.04), jammy (22.04)
 * Arch Linux
 * FreeBSD
 
