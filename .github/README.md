@@ -69,10 +69,6 @@ See the role `defaults` files for main role vars listings:
 
   * [defaults](../defaults/main/)
 
-Define these _required_ vars for the role:
-
-  * `xscreensaver_user_name`: user name of main xscreensaver user
-
 ## Contributing
 
 * Feel free to report a bug or propose a feature by opening a new
