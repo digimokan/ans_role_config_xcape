@@ -54,7 +54,7 @@ Install and configure the xcape keyboard-modifier utility.
        - name: "Install and configure the xcape keyboard-modifier utility"
          ansible.builtin.include_role:
            name: ans_role_config_xcape
-           public: yes
+           public: true
          vars:
            tap_for_effect_mappings:
              - { tap_key: 'Control_L', tap_effect: 'Control_L|space' }
